@@ -21,6 +21,9 @@ if installation method above failed.
 
 `conda install pytorch3d -c pytorch3d`
 
+## Visualization
+`python DemoImageUtils_V3_Gnew.py`
+
 ## Dataset 
 Download and merge this "GeoFace" folder into your cloned repository. It includes pretrained data of net modules
 and generated Training set of 5 identity and 1000 identity.
@@ -58,8 +61,7 @@ Training with 1000 identity.
 
 `python -m torch.distributed.run --nnodes=1 --nproc_per_node=4 --master_addr="127.0.0.1" --master_port=$RANDOM train_V10_4_ddp.py --dataset_path ./datasets/FFHQ_SDF_Small_1000 --expname train_Small_1000 --epoch 20 --wandb`
 
-## Visualization
-`python DemoImageUtils_V3_Gnew.py`
+
 
 ## TODO: 
 ### Pretrained Models 
