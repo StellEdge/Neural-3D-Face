@@ -21,16 +21,22 @@ if installation method above failed.
 
 `conda install pytorch3d -c pytorch3d`
 
+### Pretrained Models 
+Put these models into `data/tmp/train_2022_11_08_23_23_05_test_24_wzhwjaw_NOflip_CONTEX/models`
+
+BaiduNetDisk：https://pan.baidu.com/s/1Oy6lNVHZ3RQe6TMYOEIlBA?pwd=vwga 
+Password：vwga 
+
 ## Visualization
+
 `python DemoImageUtils_V3_Gnew.py`
 
 ## Dataset 
-Download and merge this "GeoFace" folder into your cloned repository. It includes pretrained data of net modules
+Download and merge this folder into your cloned repository. It includes pretrained data of net modules
 and generated Training set of 5 identity and 1000 identity.
 
-### BaiduNetDisk
-链接：https://pan.baidu.com/s/1AD_McQZK-DY4e3BIvX1xDQ?pwd=r2y7 
-提取码：r2y7
+BaiduNetDisk：https://pan.baidu.com/s/1AD_McQZK-DY4e3BIvX1xDQ?pwd=r2y7 
+Password：r2y7
 
 ## Training
 
@@ -60,9 +66,4 @@ Debug training with no wandb info, 4 processes.
 Training with 1000 identity.
 
 `python -m torch.distributed.run --nnodes=1 --nproc_per_node=4 --master_addr="127.0.0.1" --master_port=$RANDOM train_V10_4_ddp.py --dataset_path ./datasets/FFHQ_SDF_Small_1000 --expname train_Small_1000 --epoch 20 --wandb`
-
-
-
-## TODO: 
-### Pretrained Models 
 
