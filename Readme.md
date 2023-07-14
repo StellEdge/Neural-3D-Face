@@ -28,7 +28,10 @@ BaiduNetDisk：https://pan.baidu.com/s/1Oy6lNVHZ3RQe6TMYOEIlBA?pwd=vwga
 Password：vwga 
 
 ## Visualization
+![RUNOOB 图标](./crossgeneration.jpg)
+![RUNOOB 图标](./crossfusion.jpg)
 
+To reproduce these images, please complete model download and put them to the right place.
 `python DemoImageUtils_V3_Gnew.py`
 
 ## Dataset 
