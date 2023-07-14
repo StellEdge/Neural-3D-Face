@@ -1,6 +1,5 @@
 # Neural 3D Face Rendering conditioned on 2D appearance via GAN Disentanglement Method
 
-![RUNOOB 图标](./attractor2.png)
 
  we propose a method for rendering 2D images of 3D face meshes directly controlled by a single 2D reference image, using GAN disentanglement. Our approach involves an input of a 3D mesh and a reference image, where encoders extract geometric features from the mesh and appearance features from the reference image. These features control the StyleGAN2 generator to obtain a generated image that preserves the 3D mesh's geometry and the reference image's appearance.
 ## Requirements 
@@ -28,8 +27,8 @@ BaiduNetDisk：https://pan.baidu.com/s/1Oy6lNVHZ3RQe6TMYOEIlBA?pwd=vwga
 Password：vwga 
 
 ## Visualization
-![RUNOOB 图标](./crossgeneration.jpg)
-![RUNOOB 图标](./crossfusion.jpg)
+![crossgeneration](./crossgeneration.jpg)
+![crossfusion](./crossfusion.jpg)
 
 To reproduce these images, please complete model download and put them to the right place.
 `python DemoImageUtils_V3_Gnew.py`
