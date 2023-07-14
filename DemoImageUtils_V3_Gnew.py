@@ -617,8 +617,8 @@ if __name__ == '__main__':
         # os.path.join(common_path, "sample_0_marching_cubes_mesh_azim5_elev9.obj"),
         # os.path.join(common_path, "sample_1_marching_cubes_mesh_azim-24_elev-5.obj"),
         # os.path.join(common_path, "sample_2_marching_cubes_mesh_azim-6_elev-5.obj")
-        os.path.join(common_path, "david.obj"),
-        # os.path.join(common_path, "sample_0_marching_cubes_mesh_azim1_elev-8.obj"),
+        # os.path.join(common_path, "david.obj"),
+        os.path.join(common_path, "sample_0_marching_cubes_mesh_azim1_elev-8.obj"),
         os.path.join(common_path, "sample_1_marching_cubes_mesh_azim-4_elev12.obj"),
         os.path.join(common_path, "sample_2_marching_cubes_mesh_azim-4_elev6.obj"),
         os.path.join(common_path, "sample_2531_marching_cubes_mesh_azim-18_elev-3.obj"),
@@ -677,14 +677,14 @@ if __name__ == '__main__':
     #                            load_model_step=20, save_path="test_17_landmarks_20v2_neo.jpg",image_size=256,verbose = False)
 
     #Last
-    # create_cross_fusion_images(mesh_paths, ref_image_paths,
-    #                            load_model_path="data/tmp/train_2022_11_08_23_23_05_test_24_wzhwjaw_NOflip_CONTEX/models",
-    #                            load_model_step=4, save_path="train_24_10x10_wzhwjaw_NOflip_CONTEX_cp_6.jpg", image_size=256,
-    #                            verbose=False,make_landmarks=False)
+    create_cross_fusion_images(mesh_paths, ref_image_paths,
+                               load_model_path="data/tmp/train_2022_11_08_23_23_05_test_24_wzhwjaw_NOflip_CONTEX/models",
+                               load_model_step=4, save_path="crossgeneration.jpg", image_size=256,
+                               verbose=False,make_landmarks=False)
 
     create_interpolated_images(mesh_paths, ref_image_paths,
                                load_model_path="data/tmp/train_2022_11_08_23_23_05_test_24_wzhwjaw_NOflip_CONTEX/models",
-                               load_model_step=4, save_path="train_24_10x10_wzhwjaw_NOflip_CONTEX_cp_6.jpg", image_size=256,
+                               load_model_step=4, save_path="crossfusion.jpg", image_size=256,
                                verbose=False,make_landmarks=False)
 
     #
