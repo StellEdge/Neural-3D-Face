@@ -3,6 +3,7 @@
 
  we propose a method for rendering 2D images of 3D face meshes directly controlled by a single 2D reference image, using GAN disentanglement. Our approach involves an input of a 3D mesh and a reference image, where encoders extract geometric features from the mesh and appearance features from the reference image. These features control the StyleGAN2 generator to obtain a generated image that preserves the 3D mesh's geometry and the reference image's appearance.
 ## Requirements 
+We recommend using Ubuntu for better pytorch3D installation experience.
 
 This project comes with a requirements.txt file. please install them with conda command:
 
@@ -11,7 +12,7 @@ This project comes with a requirements.txt file. please install them with conda 
 This will create a conda environment named "GeoFaceTest".
 
 ### Tips:
-install pytorch3d using following commands from https://github.com/facebookresearch/pytorch3d/blob/main/INSTALL.md
+Install pytorch3d using following commands from https://github.com/facebookresearch/pytorch3d/blob/main/INSTALL.md
 if installation method above failed.
 
 `conda install -c fvcore -c iopath -c conda-forge fvcore iopath`
@@ -20,9 +21,11 @@ if installation method above failed.
 
 `conda install pytorch3d -c pytorch3d`
 
-### Pretrained Models 
+### Pretrained Models
 Put these models into `data/tmp/train_2022_11_08_23_23_05_test_24_wzhwjaw_NOflip_CONTEX/models`
 
+Google Drive:
+https://drive.google.com/file/d/1tXuMbR3I28wTf1Xvxjh7tzWlYidAVvdy/view?usp=drive_link
 BaiduNetDisk：https://pan.baidu.com/s/1Oy6lNVHZ3RQe6TMYOEIlBA?pwd=vwga 
 Password：vwga 
 
@@ -33,15 +36,20 @@ Password：vwga
 To reproduce these images, please complete model download and put them to the right place.
 `python DemoImageUtils_V3_Gnew.py`
 
-## Dataset 
+
+
+## Training
+
+### Dataset 
 Download and merge this folder into your cloned repository. It includes pretrained data of net modules
 and generated Training set of 5 identity and 1000 identity.
+
+Google Drive:https://drive.google.com/file/d/1c4bLHkM4g6u53r7X6tcS9HJXShkJB2lc/view?usp=drive_link
 
 BaiduNetDisk：https://pan.baidu.com/s/1AD_McQZK-DY4e3BIvX1xDQ?pwd=r2y7 
 Password：r2y7
 
-## Training
-
+### Start Training
 Train with default setting use this command:
 
 `python train_V10_4_StyleGAN2_Unpaired_FFHQ_256_lndloss+GEnew.py --expname test --wandb`
@@ -59,7 +67,7 @@ eckpoints_epoch 20`
 
 Checkpoints will be saved to "./data/tmp/{train_name}_{time}/models/"
 
-## Parallel Training
+### Parallel Training
 
 Debug training with no wandb info, 4 processes. 
 
