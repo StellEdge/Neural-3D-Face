@@ -36,7 +36,7 @@ https://drive.google.com/file/d/1tXuMbR3I28wTf1Xvxjh7tzWlYidAVvdy/view?usp=drive
 BaiduNetDisk：https://pan.baidu.com/s/1Oy6lNVHZ3RQe6TMYOEIlBA?pwd=vwga 
 Password：vwga 
 
-#### Test Dataset 
+#### Modules and Test Dataset 
 Download and merge this folder into your cloned repository. It includes pretrained data of net modules
 and generated Training set of 5 identity and 1000 identity.
 
