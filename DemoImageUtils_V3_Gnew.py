@@ -625,7 +625,7 @@ if __name__ == '__main__':
         os.path.join(common_path, "sample_3168_marching_cubes_mesh_azim-23_elev-1.obj")
     ]
     ref_image_paths = [
-        os.path.join(common_path,"tmp", "0000000.png"),
+        os.path.join(common_path, "0000000.png"),
         os.path.join(common_path, "0000001.png"),
         os.path.join(common_path, "0000002.png"),
         os.path.join(common_path, "0002531.png"),

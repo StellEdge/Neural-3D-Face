@@ -59,6 +59,8 @@ dependencies:
   - munch=2.5.0
   - munkres=1.1.4
   - networkx=2.8.4
+  - ninja=1.10.2
+  - ninja-base=1.10.2
   - numpy=1.23.1
   - numpy-base=1.23.1
   - openjpeg=2.4.0

@@ -5,6 +5,8 @@
 ## Requirements 
 We recommend using Ubuntu for better pytorch3D installation experience.
 
+Our CUDA Kit: cudatoolkit=11.6.0
+
 This project comes with a requirements.txt file. please install them with conda command:
 
 `conda env create -f environment.yml`
@@ -21,13 +23,31 @@ if installation method above failed.
 
 `conda install pytorch3d -c pytorch3d`
 
-### Pretrained Models
+
+### Before Running
+Please merge all these files into the project before first running.
+
+#### Pretrained Models
 Put these models into `data/tmp/train_2022_11_08_23_23_05_test_24_wzhwjaw_NOflip_CONTEX/models`
 
 Google Drive:
 https://drive.google.com/file/d/1tXuMbR3I28wTf1Xvxjh7tzWlYidAVvdy/view?usp=drive_link
+
 BaiduNetDisk：https://pan.baidu.com/s/1Oy6lNVHZ3RQe6TMYOEIlBA?pwd=vwga 
 Password：vwga 
+
+#### Test Dataset 
+Download and merge this folder into your cloned repository. It includes pretrained data of net modules
+and generated Training set of 5 identity and 1000 identity.
+
+Google Drive:https://drive.google.com/file/d/1c4bLHkM4g6u53r7X6tcS9HJXShkJB2lc/view?usp=drive_link
+
+BaiduNetDisk：https://pan.baidu.com/s/1AD_McQZK-DY4e3BIvX1xDQ?pwd=r2y7 
+Password：r2y7
+
+
+
+
 
 ## Visualization
 ![crossgeneration](./crossgeneration.jpg)
@@ -40,14 +60,7 @@ To reproduce these images, please complete model download and put them to the ri
 
 ## Training
 
-### Dataset 
-Download and merge this folder into your cloned repository. It includes pretrained data of net modules
-and generated Training set of 5 identity and 1000 identity.
 
-Google Drive:https://drive.google.com/file/d/1c4bLHkM4g6u53r7X6tcS9HJXShkJB2lc/view?usp=drive_link
-
-BaiduNetDisk：https://pan.baidu.com/s/1AD_McQZK-DY4e3BIvX1xDQ?pwd=r2y7 
-Password：r2y7
 
 ### Start Training
 Train with default setting use this command:
