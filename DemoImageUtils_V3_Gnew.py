@@ -284,7 +284,7 @@ def create_cross_fusion_images(mesh_paths, ref_paths, load_model_path,load_model
     blank_image = render_blank_image(image_size,image_size)
     blank_image = Image.fromarray(np.uint8(blank_image * 255)).convert('RGB')
     draw = ImageDraw.Draw(blank_image)
-    font = ImageFont.truetype(r'consola.ttf', 24)
+    font = ImageFont.load_default()
     stroke_color = (0, 0, 0)
     draw.text((140, 35), 'Mesh\nInput', font=font, align="left", stroke_width=1,
               stroke_fill=stroke_color)
